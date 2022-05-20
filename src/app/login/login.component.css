@@ -1,0 +1,25 @@
+.form-control {
+  display: inline-block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  margin: .375rem !important;
+}
+
+
+
+  .form-group label {
+    display: inline-flex;
+    width: 100px;
+  }
+
+.save-btn {
+  position: absolute;
+  left: 45%;
+}
+
+.login-form {
+  position: absolute;
+  top: 40%;
+  left:40%;
+}

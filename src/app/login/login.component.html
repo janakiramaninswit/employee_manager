@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div ng-style="float:right">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" [ngStyle]="{'float':'right !important'}">
+            <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<form [formGroup]="loginForm" ngClass="login-form" (ngSubmit)="login()">
+  <div class="form-group">
+    <label for="userName">UserName:</label>
+    <input class="form-control" formControlName="userName" placeholder="Enter username" id="username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input class="form-control" formControlName="password" type="password" placeholder="Enter password" id="password">
+  </div>
+  <button type="submit" ngClass="save-btn" class="btn btn-success" >Login</button>
+</form>
